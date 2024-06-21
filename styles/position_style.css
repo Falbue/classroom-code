@@ -1,0 +1,31 @@
+.right{float: right;}
+.left{float: left;}
+
+.align_center{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.object_center{
+	display: flex;
+	justify-content: center;
+}
+
+.full_with{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.full_height{
+	display: flex;
+	flex-grow: 1;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+}
+.text_center{text-align: center;}
+.fixed{position: fixed;}

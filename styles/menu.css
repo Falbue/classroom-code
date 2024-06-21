@@ -1,0 +1,72 @@
+:root {
+    /* Общие переменные */
+    --button-background-color: #007bff;
+    --button-text-color: white;
+}
+
+/* Светлая тема */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --card-background-color: #dfdfdf;
+}
+
+/* Темная тема */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: white;
+        --card-background-color: #333333;
+        --button-background-color: #bb86fc;
+        --button-text-color: black;
+    }
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--card-background-color);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--menu-text-color);
+    display: block;
+    transition: 300ms;
+}
+
+.menu a:hover {
+    color: var(--menu-hover-color);
+}
+
+.menu .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu {
+    width: 250px;
+}
+
+.open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-color);
+    border: none;
+}

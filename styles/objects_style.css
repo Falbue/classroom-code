@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+:root {
+    /* Общие переменные */
+    --button-background-color: #007bff;
+    --button-text-color: white;
+}
+
+/* Светлая тема */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --card-background-color: #dfdfdf;
+}
+
+/* Темная тема */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: white;
+        --card-background-color: #333333;
+        --button-background-color: #bb86fc;
+        --button-text-color: black;
+    }
+}
+
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header{
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--card-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+header a img{width: 30px}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px 0 150px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 200px;
+    min-height: 200px;
+    background-color: var(--card-background-color);
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+}
