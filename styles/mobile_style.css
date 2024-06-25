@@ -57,14 +57,8 @@
   }
 
   .card {
-    width: 100px;
-    min-height: 100px;
+    width: 150px;
+    min-height: 150px; 
     padding: 10px;
   }
-
-
-
-
-
-
 }
