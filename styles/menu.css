@@ -86,3 +86,21 @@ header a img{width: 30px}
     color: var(--text-color);
     border: none;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 50px; /* Высота шапки */
+        width: 100%; /* Ширина шапки */
+        position: fixed;
+        z-index: 900;
+        bottom: 0; /* Зафиксировать снизу */
+        left: 0; /* Начинать с левого края */
+        background-color: var(--card-background-color);
+        display: flex;
+        flex-direction: row; /* Расположить элементы по горизонтали */
+        align-items: center;
+        padding: 0 10px; /* Отступы по горизонтали */
+    }
+}
